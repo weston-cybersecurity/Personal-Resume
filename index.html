@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專業履歷 | Your Name</title>
+    <!-- 載入 Google 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- 載入圖示庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    window.onscroll = function() {
+        const nav = document.querySelector('nav');
+        if (window.pageYOffset > 50) {
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        } else {
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            nav.style.boxShadow = 'none';
+        }
+    };
+</script>
+<body>
+
+    <!-- 導覽列 -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">PORTFOLIO</div>
+            <ul>
+                <li><a href="#about">關於</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#contact">聯絡</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄區塊 (Hero Section) -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/150" alt="大頭照" class="profile-img">
+            <h1>你好，我是 <span class="highlight">您的姓名</span></h1>
+            <p>專注於打造優質使用者體驗的前端開發者</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 關於我 -->
+        <section id="about" class="section">
+            <h2 class="section-title">關於我</h2>
+            <p>這裡填寫您的個人簡介。描述您的職涯背景、對技術的熱情，以及您能為團隊帶來的價值。保持簡潔但充滿力量。</p>
+        </section>
+
+        <!-- 專業技能 -->
+        <section id="skills" class="section">
+            <h2 class="section-title">專業技能</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5 / CSS3</div>
+                <div class="skill-item">JavaScript (ES6+)</div>
+                <div class="skill-item">React / Vue</div>
+                <div class="skill-item">Git / GitHub</div>
+                <div class="skill-item">UI/UX Design</div>
+                <div class="skill-item">Responsive Design</div>
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="projects" class="section">
+            <h2 class="section-title">精選作品</h2>
+            <div class="project-grid">
+                <!-- 專案 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>電子商務平台</h3>
+                        <p>使用 React 與 Tailwind CSS 開發，具備完整的購物車功能與響應式介面。</p>
+                        <a href="#" class="btn-sm">查看詳情</a>
+                    </div>
+                </div>
+                <!-- 專案 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>數據視覺化儀表板</h3>
+                        <p>透過 D3.js 處理複雜數據，並以直觀的圖表呈現分析結果。</p>
+                        <a href="#" class="btn-sm">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. 使用 GitHub Pages 託管</p>
+    </footer>
+
+</body>
+</html>
