@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專業履歷 | Your Name</title>
+    <!-- 載入 Google 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- 載入圖示庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<script>
+    window.onscroll = function() {
+        const nav = document.querySelector('nav');
+        if (window.pageYOffset > 50) {
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        } else {
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            nav.style.boxShadow = 'none';
+        }
+    };
+</script>
+<body>
+
+    <!-- 導覽列 -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">PERSONAL</div>
+            <ul>
+                <li><a href="#about">關於</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#contact">聯絡</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄區塊 (Hero Section) -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="assets/images/photo.png" alt="photo.png" class="profile-img">
+            <h1>你好，我是 <span class="highlight">吳詠雋(Jace Wu)</span></h1>
+            <p>專注於網路安全與系統程式開發的學生</p>
+            <div class="social-links">
+                <a href="https://github.com/weston-cybersecurity" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/jacepower5/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:jaceweston45@gmail.com" title="透過Gmail聯絡我"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 關於我 -->
+        <section id="about" class="section">
+    <h2 class="section-title">關於我</h2>
+    <div class="about-content">
+        <p>
+            我是一名高中生，我專注於 <span class="highlight">網路安全</span> 領域，熱衷於探索作業系統核心機制。我習慣透過 <strong>Python Ctypes</strong> 調用底層 API 來實作系統級應用，並運用物件導向程式設計，我堅持透過閱讀技術書籍進行深度學習，確保技術理解的完整性與系統性。
+        </p>
+        <p style="margin-top: 1.5rem; border-left: 4px solid var(--primary-color); padding-left: 15px; font-style: italic;">
+            「對我而言，教學是驗證知識最有效的方式。」
+        </p>
+        <p style="margin-top: 1.5rem;">
+            我熱衷於將所學知識分享給他人，享受教導初學者並共同破解技術難題，致力於在社群中推廣 <span class="highlight">深度學習</span> 的技術氛圍。
+        </p>
+    </div>
+</section>
+
+        <!-- 專業技能 -->
+        <section id="skills" class="section">
+            <h2 class="section-title">專業技能</h2>
+            <div class="skills-grid">
+                <div class="skill-item">熟練 Python</div>
+                <div class="skill-item">C 語言基礎</div>
+                <div class="skill-item">物件導向程式設計(OOP)</div>
+                <div class="skill-item">Windows 核心 API 調用</div>
+                <div class="skill-item">網路運作協議</div>
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="projects" class="section">
+            <h2 class="section-title">精選作品</h2>
+            <div class="project-grid">
+                <!-- 專案 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>電子商務平台</h3>
+                        <p>使用 React 與 Tailwind CSS 開發，具備完整的購物車功能與響應式介面。</p>
+                        <a href="#" class="btn-sm">查看詳情</a>
+                    </div>
+                </div>
+                <!-- 專案 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>數據視覺化儀表板</h3>
+                        <p>透過 D3.js 處理複雜數據，並以直觀的圖表呈現分析結果。</p>
+                        <a href="#" class="btn-sm">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. 使用 GitHub Pages 託管</p>
+    </footer>
+
+</body>
+</html>
